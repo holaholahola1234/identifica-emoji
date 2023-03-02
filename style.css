@@ -1,0 +1,32 @@
+.heading{
+    font-size: 18px;
+    border-radius: 10px;
+    letter-spacing: 10px;
+}
+label{
+    font-size: 14px;
+    color: aquamarine;
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 6px;
+}
+#camera, #result{
+    border:5px dashed orangered;
+    width: 350px;
+    height: 300px;
+    
+}
+
+body{
+    background-color: crimson;
+}
+#emotion-name2,#update-emoji2{
+    font-size: 40px;
+    color: blue;
+   
+}
+#emotion-name,#update-emoji{
+    font-size: 40px;
+    color: rgb(251, 255, 0);
+    
+}

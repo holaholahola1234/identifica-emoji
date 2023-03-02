@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Emoción a emoji</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+<center>
+    <h3 class="btn btn-warning heading">
+Aplicacion de deteccion de emojis
+<br>
+        <span>&#128522;</span>
+        <span>&#128512;</span>
+        <span>&#128532;</span>
+        <span>&#128546;</span>
+        <span>&#128545;</span>
+        <span>&#128548;</span>
+    </h3>
+    <br>
+    <br>
+    <p style="font-size: 22px;">toma tu foto para detectar el emoji
+    
+    <br>
+<b style="color:rgb(218, 255, 6)">Estas feliz?</b>
+<br>
+<b style="color:blue">Estas triste?</b>
+<br>
+<b style="color:red">Estas enojado?</b></p>
+
+<div class="col-md-4 col-sm-12 col-xs-12" >
+<label >vista de la camara web</label>
+<div id="camera"></div>
+
+<br>
+<br>
+<button class="btn btn-warning" onclick="takeSnapshot()">tomar foto</button>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+    
+<label>prediccion 1
+</label>
+    <p class="emotion-name" id="emotion-name"></p>
+    <p class="emoji"  id="update-emoji"></p>
+<label>prediccion 2
+</label>
+    <p class="emotion-name" id="emotion-name2"></p>
+    <p class="emoji"  id="update-emoji2"></p>
+</div>
+<div class="col-md-4 col-sm-12 col-xs-12" >
+    <label >vista de la camara web instantanea</label>
+    <div id="result"></div>
+<br>
+<button class="btn btn-success" onclick="predecir()">predecir emoción</button>
+</center>
+        </div>
+        <script src="main.js"></script>
+
+    </body>
+</html>
